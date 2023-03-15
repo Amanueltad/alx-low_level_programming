@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * create_arrat - Create an array of char
+ * create_array - Create an array of char
  * @size: The size of an array
  * @c: The chat to fill in the array
  * Return: The array filled
