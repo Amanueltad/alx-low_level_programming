@@ -1,11 +1,10 @@
+#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
 
 /*
  * is_digit - checks if a string contains a non-digit char
- * _strlen - ..
- * @s: string to be evaluated 
+ * @s: string to be evaluated
  * Return: 0 if a non-digit is found, 1 otherwise
  */
 int is_digit(char *s)
@@ -77,7 +76,7 @@ carry = 0;
 for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 {
 digit2 = s2[len2] - '0';
-carry += result[len1 + len2 + 1] + (digit1 * digit2);
+carry += result[len1 + len2 + 1] + (digit1 *digit2);
 result[len1 + len2 + 1] = carry % 10;
 carry /= 10;
 }
